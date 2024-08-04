@@ -1,0 +1,82 @@
+#root {
+  text-align: center;
+  color: aliceblue;
+}
+li:hover{
+  background-color: #3e3e4f;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  color: aliceblue;
+  font-size: 50px;
+}
+
+h1 {
+  background: linear-gradient(-45deg, #f50119,#ee7752, #e73c7e, #23a6d5, #1754e1, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+h1{
+  color: black;
+  width: 90%;
+  height: 100vh;
+  margin:  20px 20px 0 60px;
+  border: 2px solid ;
+  border-radius: 5px;
+
+}
+.menu{
+  font-size: 20px;
+  padding:5px 10px 0 8px;
+}
+li{
+  cursor: pointer;
+  padding: 10px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  flex: 70%;
+}
+nav{
+  transition: .5s;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li .active {
+  color: #878484;
+}
+
+
+
